@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | de.NBI/ELIXIR-Germany Spatial Hackathon</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+  <header style="background-color: #ADC8DA; background-image: linear-gradient(#ADC8DA, #CCDDE8);" class="site-header">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="/">de.NBI/ELIXIR-Germany Spatial Hackathon</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/schedule.html">Schedule</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-content">
+    <div class="container">
+      <article class="post">
+        <header class="post-header">
+          <h1 class="post-title">Home</h1>
+        </header>
+        <div class="post-content">
+          <p>
+            <img src="https://user-images.githubusercontent.com/114547/201348988-951367e7-b36e-4c59-9020-2af6f3c45df6.png" alt="image">
+          </p>
+          <p class="text-center">
+            ⬤ <b>12th-16th December 2022</b> ⬤ <b><a href="[https://www.denbi.de/component/chronoforms6/?chronoform=1st_BioHackathon_Germany](https://leucorea.de/)">Leucorea, Lutherstadt Wittenberg, Germany</a></b> ⬤ <b>Hybrid event</b> ⬤
+          </p>
+          <p class="text-center">
+            <b><a href="https://www.denbi.de/component/chronoforms6/?chronoform=1st_BioHackathon_Germany">&gt;&gt; Register here &lt;&lt;</a></b>
+          </p>
+          <h3 id="abstract">Abstract</h3>
+          <p>Single cell omics has revolutionised the way and the level of resolution by which life science research is conducted...</p>
+          <!-- Rest of the content -->
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer" style="background-color: #EFE4B0;">
+    <div class="container">
+      <h2 class="footer-heading">de.NBI/ELIXIR-Germany Spatial Hackathon</h2>
+      <p>
+        Contact: <a href="mailto:info@example.com">info@example.com</a>
+      </p>
+      <p>
+        Code of Conduct: <a href="/code-of-conduct.html">View</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
