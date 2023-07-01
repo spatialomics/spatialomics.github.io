@@ -15,9 +15,21 @@
   <!-- <link rel="stylesheet" href="/assets/main.css"> -->
 
   <style>
-    img {
+    .image {
       width: 100%;
       margin: 30px 0;
+    }
+
+    .time-location-section {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 20px;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+    .time-location-section img {
+      width: 1.6rem;
     }
 
     .register-btn {
@@ -29,12 +41,63 @@
       border-radius: 8px;
       font-size: 1.25rem;
     }
+
+    .organizers {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 25px;
+    }
+
+    @media screen and (min-width: 768px) {
+      .organizers {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media screen and (min-width: 1024px) {
+      .organizers {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+
+    .organizers .card {
+      border: none;
+    }
+
+    .organizer__card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .organizer__image {
+      border-radius: 50%;
+      max-width: 150px;
+      margin-bottom: 25px;
+    }
+
+    .organizer__socials {
+      display: flex;
+      gap: 15px;
+    }
+
+    .organizer__socials a:hover img {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+
+    .organizer__socials img {
+      width: 25px;
+      opacity: 0.65;
+      transition: all 0.23s ease-in-out;
+    }
   </style>
 
 </head>
 
 <body>
-  <header style="background-color: #e5d3ea;" class="site-header mb-5">
+  <header style="background-color: #CCDDE8;" class="site-header mb-5">
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="/">dkfz | SpatialHack</a>
@@ -68,13 +131,23 @@
 
         <div class="post-content">
           <div class="text-center">
-            <img class="img-fluid" src="https://www.bruker.com/en/products-and-solutions/fluorescence-microscopy/spatial-omics-solutions/_jcr_content/teaserImage.coreimg.png/1603676086558/high-plex-spatial-imaging.png"
+            <img class="img-fluid image" src="https://www.bruker.com/en/products-and-solutions/fluorescence-microscopy/spatial-omics-solutions/_jcr_content/teaserImage.coreimg.png/1603676086558/high-plex-spatial-imaging.png"
               alt="image">
           </div>
 
           <div class="text-center">
-            <p class="fw-bold">19th-21th July 2023 ⬤
-              <a href="https://www.dkfz.de/en/index.html" target="_blank" class="text-decoration-none">DKFZ - Heidelberg</a></p>
+            <div class="time-location-section">
+              <div>
+                <img src="https://api.iconify.design/ic:baseline-calendar-month.svg">
+                19th-21th July 2023 
+              </div>
+
+              <div>
+                <img src="https://api.iconify.design/ic:baseline-location-on.svg">
+                <a href="https://www.dkfz.de/en/index.html" target="_blank" class="text-decoration-none">DKFZ - Heidelberg</a>
+              </div>
+            </div>
+
             <p class="fw-bold">
               <a class="text-decoration-none register-btn" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdMHpoKt6W55K_O-XqmKTEircfXRwXFLvHg2roC31gxHPc6aQ/viewform?usp=sf_link">
                 Register here
@@ -94,7 +167,7 @@
           <h3 id="project-focus" class="mb-3 mt-4">Project Focus</h3>
 
           <p>
-            <p><img src="https://user-images.githubusercontent.com/114547/201365771-dae41d4d-8706-46b8-9de5-14ebd084b444.png" alt="image"></p>          </p>
+            <p><img class="image" src="https://user-images.githubusercontent.com/114547/201365771-dae41d4d-8706-46b8-9de5-14ebd084b444.png" alt="image"></p>          </p>
             The main targets of the SpatialHack are:
             <br>
             <br>
@@ -133,6 +206,68 @@
             </p>
 
           <h3 id="o-d" class="mb-3 mt-4">Organizational Details</h3>
+
+          <div class="organizers">
+            <div class="card">
+              <div class="organizer__card card-body">
+                <img class="organizer__image" src="https://placehold.co/400x400" alt="Elyas Heidari">
+                
+                <h5 class="card-title">Elyas Heidari</h5>
+                <p class="card-text">Ph.D. student at DKFZ Heidelberg</p>
+
+                <div class="organizer__socials">
+                  <a href="https://twitter.com/">
+                    <img src="https://api.iconify.design/bxl:twitter.svg" alt="Twitter">
+                  </a>
+                  <a href="https://twitter.com/">
+                    <img src="https://api.iconify.design/bxl:linkedin.svg" alt="Linkedin">
+                  </a>
+                  <a href="https://scholar.google.com/citations?user=1tjJjf8AAAAJ&hl=en">
+                    <img src="https://api.iconify.design/ic:baseline-school.svg" alt="Google Scholar">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="organizer__card card-body">
+                <img class="organizer__image" src="./pics/mossi_img.jpg" alt="Mostafa Shahhosseini">
+                
+                <h5 class="card-title">Mostafa Shahhosseini</h5>
+                <p class="card-text">M.Sc. student at Technical University of Munich</p>
+
+                <div class="organizer__socials">
+                  <a href="https://twitter.com/">
+                    <img src="https://api.iconify.design/bxl:twitter.svg" alt="Twitter">
+                  </a>
+                  <a href="https://www.linkedin.com/in/mostafa-shahhosseini/">
+                    <img src="https://api.iconify.design/bxl:linkedin.svg" alt="Linkedin">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="organizer__card card-body">
+                <img class="organizer__image" src="https://placehold.co/400x400" alt="Name">
+                
+                <h5 class="card-title">Elyas Heidari</h5>
+                <p class="card-text">Ph.D. student at DKFZ Heidelberg</p>
+
+                <div class="organizer__socials">
+                  <a href="https://twitter.com/">
+                    <img src="https://api.iconify.design/bxl:twitter.svg" alt="Twitter">
+                  </a>
+                  <a href="https://twitter.com/">
+                    <img src="https://api.iconify.design/bxl:linkedin.svg" alt="Linkedin">
+                  </a>
+                  <a href="https://twitter.com/">
+                    <img src="https://api.iconify.design/ic:baseline-school.svg" alt="Google Scholar">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
 
             <ul class="list-unstyled">
               <li class="mb-4">
