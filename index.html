@@ -174,21 +174,23 @@
             <br>
             <ul>
               <li>
-                <p><b>Data</b>. Identification and collation of <b>datasets for benchmarking</b>. Some key datasets will be collated and ready to use for the start of the hackathon, but we hope to expand this to include other relevant technologies and biological systems, especially with a focus on evaluating the quality of cell segmentation.</p>
+                <p>Reproducible and integrated workflow for incoming DKFZ's spatial datasets</p>
+                <!-- <p><b>Data</b>. Identification and collation of <b>datasets for benchmarking</b>. Some key datasets will be collated and ready to use for the start of the hackathon, but we hope to expand this to include other relevant technologies and biological systems, especially with a focus on evaluating the quality of cell segmentation.</p> -->
               </li>
               <li>
-                <p><b>QC</b>.Identification of key quality control metrics. We hope to establish clear definitions of key parameters for defining the quality and comparability of experiments such as number of UMI/molecules detected, off-target rate, consistency with prior knowledge from scRNAseq, noisy signals, sensitivity, etc.</p>
+                <p>Finding gaps and brainstorming on solving them
+                </p>
               </li>
               <li>
-                <p><b>Cell segmentation</b>. Cells exhibit a diversity of morphologies, and the standard approach of segmenting cell nuclei/DAPI signal and expansion to model the cytoplasm doesnt always work, e.g. not all cells are uniformly round.</p>
-              </li>
-              <li>
-                <p><b>Normalisation and cell type annotation</b>. Annotation of cell types in spatial data is still in it’s infancy, but there are some interesting paradigms emerging.</p>
-              </li>
-              <li>
-                <p><b>Evaluation</b>. results in light of experimental and tissue based consideration such as single-nuc vs single-cell RNAseq, cell density, tissue complexity, rare cells, non-uniformly shaped cells etc</p>
-              </li>
-            </ul>
+                <p>Prototyping a workflow for a external hackathon in October,<br> * A prototype workflow is implemented by Elyas Heidari.
+                </p>
+                <li><p>Create a landmark spatial dataset (8 Xenium slides + 10 Visium slides + 10 scRNAseq + potentially multiom) -> establishment of spatialdata objects</li>
+                <li>Standardization of QC using TXSIM and Segmentation, Normalization and pp</li> 
+                <li>Cell annotation, Niche detection,  Cellular interaction, Graph modeling,
+                  Bayesian modelling of spatial patterns and Clonal analysis</li>
+                <li>Integration of spatialtx, single-cell omics, and h&e images
+                  Integrated, user-friendly, and reproducible end-to-end workflow</li>
+                  </ul>
 
             <!-- <h4>References</h4>
             <ol>
